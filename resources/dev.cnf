@@ -1,0 +1,4 @@
+@default.cnf
+
+httpServer.public.keyStorePath=..\testcerts\server\keystore.jks
+httpServer.public.trustStorePath=..\testcerts\server\truststore.jks

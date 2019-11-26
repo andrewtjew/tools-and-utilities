@@ -1,0 +1,293 @@
+/* 
+	General styles for this example page */
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	background-color: #FFF;
+	height: 100%;
+}
+
+h2 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 20px;
+	
+	padding: 4px;
+	margin-top: 16px;
+	margin-bottom: 2px;
+	background-color: #DDD;
+	height: 100%;
+}
+
+h3 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 17px;
+	
+	margin-top: 12px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	height: 100%;
+}
+
+h4 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	
+	margin-top: 8px;
+	margin-bottom: 2px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	height: 100%;
+}
+
+input {
+	font-size: 14px;
+}
+
+button {
+	font-size: 14px;
+}
+
+select {
+	font-size: 14px;
+}
+
+title {
+	font-size: 14px;
+}
+
+textarea {
+	font-family: Consolas, Lucida Console,Courier New, monospace;
+	font-size: 14px;
+	
+	margin: 0px;
+	padding: 2px;
+	border:1px solid #555;
+}
+
+
+p {
+	margin-top: 2px;
+	margin-bottom: 6px;
+	margin-left: 4px;
+	margin-left: 4px;
+}
+
+#mainHeader {
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #FFF;
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+}
+
+#banner {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #D2D2D2;
+	padding: 0;
+	margin: 0;
+}
+
+#bannerLogo {
+	position: fixed;
+	left: 0;
+	width: 48px;
+	height: 48px;
+	background-color: #FFF;
+}
+
+#bannerTitle {
+	height: 38px;
+	width: auto;
+	background-color: #D2D2D2;
+	padding-left: 48px;
+	padding-right: 200px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#bannerInfo {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: 44px;
+	padding: 2px;
+	text-align: center;
+	background-color: #FFF;
+}
+
+#content {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #D2D2D2;
+}
+
+#dhtmlgoodies_menu img {
+	border: 0px;
+}
+
+/* End general styles for this example page */
+/* General configuration CSS */
+#dhtmlgoodies_menu ul li ul {
+	display: none; /* Needed to display ok in Opera */
+}
+
+#dhtmlgoodies_menu {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 14px;
+	visibility: hidden;
+}
+
+#dhtmlgoodies_menu ul {
+	margin: 0px; /* No indent */
+	padding: 0px; /* No indent */
+}
+
+#dhtmlgoodies_menu li {
+	list-style-type: none; /* No bullets */
+}
+
+#dhtmlgoodies_menu a {
+	margin: 0px;
+	padding: 0px;
+}
+/* End general configuration CSS */
+
+/* Cosmetic */
+
+/***********************************************************************
+		CSS - MENU BLOCKS
+	 	General rules for all menu blocks (group of sub items) 
+	***********************************************************************/
+#dhtmlgoodies_menu ul {
+	border: 1px solid #000;
+	background-color: #FFF;
+	padding: 1px;
+}
+
+#dhtmlgoodies_menu ul.menuBlock1 { /* Menu bar - main menu items */
+	border: 0px;
+	padding: 1px;
+	border: 1px solid #000;
+	background-color: #D2D2D2;
+	overflow: visible;
+}
+
+#dhtmlgoodies_menu ul.menuBlock2 { /* Menu bar - main menu items */
+	border: 0px;
+	padding: 1px;
+	border: 1px solid #555;
+}
+
+/***********************************************************************
+		CSS - MENU ITEMS
+	 	Here, you could assign rules to the menu items at different depths.
+	***********************************************************************/
+/* General rules for all menu items */
+#dhtmlgoodies_menu a {
+	color: #000;
+	text-decoration: none;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/*
+	Main menu items 
+	*/
+#dhtmlgoodies_menu .currentDepth1 {
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #D2D2D2;
+}
+
+#dhtmlgoodies_menu .currentDepth1over {
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #317082;
+	border: 1px solid #000;
+}
+
+#dhtmlgoodies_menu .currentDepth1 a {
+	font-weight: bold;
+}
+
+#dhtmlgoodies_menu .currentDepth1over a { /* Text rules */
+	color: #FFF;
+	font-weight: bold;
+}
+
+/* Sub menu depth 1 */
+#dhtmlgoodies_menu .currentDepth2 {
+	padding-right: 2px;
+	border: 1px solid #FFF;
+}
+
+#dhtmlgoodies_menu .currentDepth2over {
+	padding-right: 2px;
+	background-color: #E2EBED;
+	border: 1px solid #000;
+}
+
+#dhtmlgoodies_menu .currentDepth2over a { /* Text rules */
+	color: #000;
+}
+/* Sub menu depth 2 */
+#dhtmlgoodies_menu .currentDepth3 {
+	padding-right: 2px;
+	border: 1px solid #FFF;
+}
+
+#dhtmlgoodies_menu .currentDepth3over {
+	padding-right: 2px;
+	background-color: #E2EBED;
+	border: 1px solid #000;
+}
+/* Sub menu depth 3 */
+#dhtmlgoodies_menu .currentDepth4 {
+	padding-right: 2px;
+	border: 1px solid #FFF;
+}
+
+#dhtmlgoodies_menu .currentDepth4over {
+	padding-right: 2px;
+	background-color: #E2EBED;
+	border: 1px solid #000;
+}
+
+th {
+	background-color: #E2EBED;
+	color: #000;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-weight: bold;
+	text-align: left;
+}
+
+td {
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #f6f6f6
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 2px;
+	
+}

@@ -1,0 +1,3 @@
+HttpServer.operator.port=10079
+HttpServer.private.port=10080
+HttpServer.public.port=10081

@@ -1,0 +1,3 @@
+Store.keyStore.password=password1
+Store.trustStore.password=password1
+Manager.keyManagerPassword=password1

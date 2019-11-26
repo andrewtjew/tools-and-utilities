@@ -1,0 +1,135 @@
+/* 
+	General styles for this example page */
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	background-color: #FFF;
+	height: 100%;
+}
+
+h2 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 20px;
+	
+	padding: 4px;
+	margin-top: 16px;
+	margin-bottom: 2px;
+	background-color: #DDD;
+	height: 100%;
+}
+
+h3 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 17px;
+	
+	margin-top: 12px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	color: #FFF;
+	background-color: #22D;
+	height: 100%;
+}
+
+h4 {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	
+	margin-top: 8px;
+	margin-bottom: 2px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	height: 100%;
+}
+
+input {
+	font-size: 14px;
+}
+
+button {
+	font-size: 14px;
+}
+
+select {
+	font-size: 14px;
+}
+
+title {
+	font-size: 14px;
+}
+
+textarea {
+	font-family: Consolas, Lucida Console,Courier New, monospace;
+	font-size: 14px;
+	
+	margin: 0px;
+	padding: 2px;
+	border:1px solid #555;
+}
+
+
+p {
+	margin-top: 2px;
+	margin-bottom: 6px;
+	margin-left: 4px;
+	margin-left: 4px;
+}
+
+#banner {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	background-color: 	#1976d2;
+}
+
+#bannerLeft {
+	position: fixed; 
+	left: 0;
+	padding-top: 6px;
+	padding-left: 10px;
+	height: 38px;
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#bannerTitle {
+	height: 38px;
+	width: auto;
+	padding-left: 48px;
+	padding-right: 200px;
+	padding-top: 10px;
+	text-align: center;
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#bannerRight {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 16px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: 44px;
+	padding: 2px;
+	text-align: center;
+}
+
+#content {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+	
+}
