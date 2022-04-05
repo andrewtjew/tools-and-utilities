@@ -30,6 +30,7 @@ import org.nova.http.server.GzipContentDecoder;
 import org.nova.http.server.GzipContentEncoder;
 import org.nova.http.server.HtmlContentWriter;
 import org.nova.http.server.HttpServer;
+import org.nova.http.server.HttpTransport;
 import org.nova.http.server.JSONContentReader;
 import org.nova.http.server.JSONPatchContentReader;
 import org.nova.http.server.Response;
@@ -51,14 +52,14 @@ public class Main extends ServerApplication
 	final private SessionManager sessionManager;
     public static void main(String[] args) throws Throwable
     {
-        new ServerApplicationRunner().run(args,(coreEnvironment,operatorServer)->{return new Main(coreEnvironment,operatorServer);});
+        new ServerApplicationRunner().run(args,(coreEnvironment,transport)->{return new Main(coreEnvironment,transport);});
     }
 
-	public Main(CoreEnvironment coreEnvironment,HttpServer operatorServer) throws Throwable
+	public Main(CoreEnvironment coreEnvironment,HttpTransport transport) throws Throwable
 	{
-		super("DirectoryService",coreEnvironment,operatorServer);
+		super("DirectoryService",coreEnvironment,transport);
 		this.sessionManager=new SessionManager(this.getTimerScheduler(), 10000, 10);
-        this.getOperatorServer().getTransformers().add(new AuthenticationFilter(this.sessionManager,"http://localhost"));
+        this.getOperatorServer().getTransformers().addBottomFilters(new AuthenticationFilter(this.sessionManager,"http://localhost"));
         this.getOperatorServer().getTransformers().add(new HtmlContentWriter());
 		this.getOperatorVariableManager().register(this);
 		this.getOperatorServer().registerHandlers(this);

@@ -48,7 +48,7 @@ public class AuthenticationFilter extends Filter
 	}
 	
 	@Override
-	public Response<?> executeNext(Trace trace, Context context, FilterChain filterChain) throws Throwable
+	public Response<?> executeNext(Trace trace, Context context) throws Throwable
 	{
 		String token=context.getHttpServletRequest().getHeader("X-Token");
 		Session session=this.sessionManager.get(token);
@@ -60,7 +60,7 @@ public class AuthenticationFilter extends Filter
 			return null;
 		}
 		context.setState(session);
-		return filterChain.next(trace, context);
+		return context.next(trace);
 	}
 
 

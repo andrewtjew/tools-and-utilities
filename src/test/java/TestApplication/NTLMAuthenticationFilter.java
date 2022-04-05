@@ -29,7 +29,7 @@ public class NTLMAuthenticationFilter extends Filter
 	
 	
 	@Override
-	public Response<?> executeNext(Trace trace, Context context, FilterChain filterChain) throws Throwable
+	public Response<?> executeNext(Trace trace, Context context) throws Throwable
 	{
 		String authorization = context.getHttpServletRequest().getHeader("Authorization");
 		if (authorization == null)
@@ -57,7 +57,7 @@ public class NTLMAuthenticationFilter extends Filter
 				//Authenticate
 				//NTCredentials credentials=new NTCredentials(message.getUser(), message.getDefaultPassword(), message.getWorkstation(),message.getDomain());
 				context.setState(type3);
-				return filterChain.next(trace, context);
+		        return context.next(trace);
 			}
 		}
 		return new Response<Void>(HttpStatus.FORBIDDEN_403);

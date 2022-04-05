@@ -29,6 +29,7 @@ import org.nova.frameworks.ServerApplicationRunner;
 import org.nova.http.server.GzipContentDecoder;
 import org.nova.http.server.GzipContentEncoder;
 import org.nova.http.server.HttpServer;
+import org.nova.http.server.HttpTransport;
 import org.nova.http.server.JSONContentReader;
 import org.nova.http.server.JSONContentWriter;
 import org.nova.http.server.JSONPatchContentReader;
@@ -56,7 +57,7 @@ public class Main extends ServerApplication
         new ServerApplicationRunner().run(args,(coreEnvironment,operatorServer)->{return new Main(coreEnvironment,operatorServer);});
     }
 
-    public Main(CoreEnvironment coreEnvironment,HttpServer operatorServer) throws Throwable
+    public Main(CoreEnvironment coreEnvironment,HttpTransport operatorServer) throws Throwable
     {
 		super("TestDeploy",coreEnvironment,operatorServer);
 		Configuration configuration=coreEnvironment.getConfiguration();
